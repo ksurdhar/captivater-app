@@ -9,5 +9,11 @@ event_url = "http://api.thenounproject.com/icon/walk"
 
 access_token = OAuth::AccessToken.new(CONSUMER)
 response = access_token.get(event_url)
+response_body = response.body
+
+# response_arr = response_body.split(" ")
+# url_pos = response_arr.index("\"preview_url\":") + 1
+# p response_arr[url_pos]
+
 puts response.body
 
