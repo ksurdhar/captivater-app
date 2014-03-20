@@ -4,11 +4,15 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
+gem 'better_errors'
+gem 'binding_of_caller'
 gem 'pg'
 
 gem 'figaro'
 
 gem 'devise'
+
+gem 'oauth'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

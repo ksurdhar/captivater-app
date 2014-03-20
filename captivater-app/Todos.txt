@@ -1,0 +1,4 @@
+Add user_ids to textblocks so they can be saved
+
+app creates and saves an array of urls by running script when user submits form.
+upon rendering the show view, begin pulling images using the urls
