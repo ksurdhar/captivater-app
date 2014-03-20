@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20140320052957) do
   add_index "textblocks", ["user_id"], name: "index_textblocks_on_user_id", using: :btree
 
   create_table "urls", force: true do |t|
-    t.string   "url"
+    t.text     "url"
     t.integer  "textblock_id"
     t.datetime "created_at"
     t.datetime "updated_at"

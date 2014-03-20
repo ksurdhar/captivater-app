@@ -1,5 +1,16 @@
-<h2>Textblock Display</h2>
+<h2 class="tlt">Textblock Display</h2>
 
-<p><%= @textblock.body %></p>
+<div class="tlt"> 
+<%= @textblock.body %>
+</div>
 
-<img></img>
+<div class="images"></div>
+
+<ol>
+  <% @textblock.urls.each do |url| %>
+  <li>
+    <img src=<%= url.url %>></img>
+  </li>
+  <% end %>
+</ol>
+

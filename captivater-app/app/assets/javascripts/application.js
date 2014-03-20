@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.lettering.js
+//= require jquery.textillate.js
 //= require turbolinks
 //= require_tree .

@@ -1,4 +1,31 @@
-Add user_ids to textblocks so they can be saved
+TODO LIST
+-create backbone show view, no router
+-sanatize input: handle symbols, make everything lowercase
+-add word attribute to url model. Will be helpful when reading
+-prevent duplicate images
 
-app creates and saves an array of urls by running script when user submits form.
-upon rendering the show view, begin pulling images using the urls
+
+
+
+ANIMATION
+-Load sentence by sentence 
+-loop through the images for a given sentence
+-on keydown, render next sentence, new images
+
+
+
+ADDITIONAL FUNCTIONALITY
+- the ability to save and share stories with other users
+- display the whole paragraph on the side as a minimap or nav bar, which highlights as you go along
+- parent mode: creating a blacklist of naughty words
+
+
+-add omniauthable to users model
+-omniauth good for allowing users to sign in with facebook or twitter
+
+do we grab all the images at once?
+not rendering all the images at once. 
+use javascript to render an image
+
+
+get started by displaying the first sentence and the images for that first sentence

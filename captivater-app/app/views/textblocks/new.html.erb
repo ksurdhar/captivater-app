@@ -1,10 +1,11 @@
-<h2> New Textblock </h2>
+
+<h1>New Textblock</h1>
 <form action="<%= textblocks_url %>" method="post">
   <%= auth_token %>
 
   <label>
-    Feed Me A Word
-    <input type="text" name="textblock[body]" value="">
+    Enter your story
+    <input type="text" name="textblock[body]" value="" size="20">
   </label>
 
   <input type="submit" value="Animate">
