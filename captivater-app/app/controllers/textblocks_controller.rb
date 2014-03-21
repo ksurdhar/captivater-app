@@ -12,10 +12,16 @@ class TextblocksController < ApplicationController
     @textblock.user_id = current_user.id
     if @textblock.save
 
-      text = @textblock.body
+      sentences = @textblock.body.split(".")
 
-      filtered_words = UrlGetter.filter_words(text)
-      UrlGetter.build_url(filtered_words, @textblock)
+      sentences.each do |sentence|
+        @textblock.sentences.create({ body: sentence })
+      end
+
+      @textblock.sentences.each do |sentence|
+        filtered_words = UrlGetter.filter_words(sentence.body)
+        UrlGetter.build_url(filtered_words, sentence)
+      end
 
       redirect_to textblock_url(@textblock)
     else
@@ -30,6 +36,8 @@ class TextblocksController < ApplicationController
 
   private
   def textblock_params
-    params.require(:textblock).permit(:body, :title, :urls)
+    params.require(:textblock).permit(:body, :title, :sentences)
   end
 end
+
+#when we create a block, we create sentences from the body, for each sentence we create urls

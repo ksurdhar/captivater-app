@@ -17,7 +17,7 @@ class UrlGetter
 
   end
 
-  def self.build_url(words, block)
+  def self.build_url(words, sentence)
 
     consumer = OAuth::Consumer.new(CONSUMER_KEY, CONSUMER_SECRET, :site => "http://thenounproject.com/")
 
@@ -31,7 +31,7 @@ class UrlGetter
 
       response_hash = JSON.parse(response.body)
 
-      block.urls.create({url: response_hash["icon"]["preview_url"]})
+      sentence.urls.create({url: response_hash["icon"]["preview_url"], word: word })
 
     end
 

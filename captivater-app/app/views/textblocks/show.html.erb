@@ -4,13 +4,17 @@
 <%= @textblock.body %>
 </div>
 
-<div class="images"></div>
-
 <ol>
-  <% @textblock.urls.each do |url| %>
-  <li>
-    <img src=<%= url.url %>></img>
-  </li>
+  <% @textblock.sentences.each do |sentence| %>
+    <% sentence.urls.each do |url| %>
+      <li>
+        <img src=<%=url.url%>></img>
+      </li>
+    <% end %>
   <% end %>
 </ol>
+
+
+
+<div class="images"></div>
 

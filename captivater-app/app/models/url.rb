@@ -1,3 +1,3 @@
 class Url < ActiveRecord::Base
-  belongs_to :textblock
+  belongs_to :sentence
 end

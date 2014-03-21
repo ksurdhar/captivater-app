@@ -29,3 +29,14 @@ use javascript to render an image
 
 
 get started by displaying the first sentence and the images for that first sentence
+
+ARCHITECTURE:
+
+textblock
+title, body, references a user
+
+sentence
+body, references a textblock
+
+url 
+url, word references a sentence
