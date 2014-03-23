@@ -1,5 +1,4 @@
 class Textblock < ActiveRecord::Base
-  extend BulkMethodsMixin
   belongs_to :user
-  has_many :sentences
+  has_many :urls
 end

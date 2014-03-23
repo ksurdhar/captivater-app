@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  url: MyString
+  url: MyText
   word: MyString
-  sentence_id: 
+  textblock_id: 
 
 two:
-  url: MyString
+  url: MyText
   word: MyString
-  sentence_id: 
+  textblock_id: 

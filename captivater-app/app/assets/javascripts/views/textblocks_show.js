@@ -3,10 +3,6 @@ window.CaptivaterApp.Views.textblocksShow = Backbone.View.extend({
 
   initialize: function (options) {
     this.listenTo(this.model, "sync", this.render);
-
-    this.sentenceShowView = new CaptivaterApp.Views.SentenceShow({
-      collection: this.model.sentences()
-    });
   },
 
   events: {
@@ -19,8 +15,8 @@ window.CaptivaterApp.Views.textblocksShow = Backbone.View.extend({
 
     this.$el.html(renderedContent);
     this.$el.find(".current_sentence").html(this.model.currentSentence())
-
-    this.$el.find(".sentences").html(this.sentenceShowView.render().$el)
+    // loop thru currentImgs, insert into current_imgs tag: "<img src=" + url + "></img>"
+    // probably want to give each img it's own id or class for controlling appearance
     
     return this;
   },
@@ -35,6 +31,3 @@ window.CaptivaterApp.Views.textblocksShow = Backbone.View.extend({
     this.render();
   }
 });
-
-
-//make a function that prints a list of urls if their word attributes match words in the current sentence

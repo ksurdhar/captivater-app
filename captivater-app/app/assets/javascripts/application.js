@@ -15,7 +15,6 @@
 //= require jquery_ujs
 //= require jquery.lettering.js
 //= require jquery.textillate.js
-//= require turbolinks
 //= require underscore
 //= require backbone
 //= require captivater_app

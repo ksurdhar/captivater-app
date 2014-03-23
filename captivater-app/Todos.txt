@@ -1,44 +1,44 @@
 THINGS TO DO
-- migrations => a textblock has many urls
-- rails views: less jbuilder
-- replace sentence views with url views
-- url building logic
+
+CURRENT GOAL: load sentence images
 
 
 
-TODO LIST
--sanatize input: handle symbols, make everything lowercase
--prevent duplicate images
+UPCOMING GOALS
+-get images to display
+-determine css structure for images 
+-(how to loop cleanly? use a set timeout and animate.css)
+-get textillate working again
 
+-sanatize input: handle all symbols
+-get refresh page to not fail miserably
+-general site navigation // settings page
 
+-highlight words that have associated images 
+-dynamic highlighting
 
-ANIMATION
--Load sentence by sentence 
--loop through the images for a given sentence
--on keydown, render next sentence, new images
-
+HOW TO SPEED LOADING TIME
+-only get the images for the first two sentences.
+-when the user hits next, make an ajax request to grab images for the next sentence.
 
 
 ADDITIONAL FUNCTIONALITY
+- different language conversion w/ Google translate API
+- speed up url fetching with "chapter" or "sectioning" 
 - the ability to save and share stories with other users
-- display the whole paragraph on the side as a minimap or nav bar, which highlights as you go along
+- display the whole paragraph on the side as a minimap
 - parent mode: creating a blacklist of naughty words
 
 
 -add omniauthable to users model
 -omniauth good for allowing users to sign in with facebook or twitter
 
+
 ARCHITECTURE:
 
 textblock
 title, body, references a user
 
-sentence
-body, references a textblock
-
 url 
-url, word references a sentence
+url, word, references a textblock
 
-
-the show view for a textblock should have div tags for images and for sentences
-it listens for keypresses 

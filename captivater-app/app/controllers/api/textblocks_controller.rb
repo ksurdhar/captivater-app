@@ -8,29 +8,18 @@ class Api::TextblocksController < ApplicationController
 
   def create
     @textblock = Textblock.new(textblock_params)
+    # debugger
     @textblock.user_id = current_user.id
 
     if @textblock.save
 
       ActiveRecord::Base.transaction do
-
-        sentence_arr = []
-        
-        @textblock.body.split(".").each do |sentence|
-          sentence_arr.push({ body: sentence, textblock_id: @textblock.id })
-        end
-
-        Sentence.create_many(sentence_arr)
-
         urls_arr = []
-
-        @textblock.sentences.each do |sentence|
-          filtered_words = UrlGetter.filter_words(sentence.body)
-          urls_arr += UrlGetter.build_url(filtered_words, sentence)
-        end
+        
+        filtered_words = UrlGetter.filter_words(@textblock.body)
+        urls_arr += UrlGetter.build_url(filtered_words, @textblock)
 
         Url.create_many(urls_arr)
-        
       end
 
       render "textblocks/show"
@@ -47,7 +36,7 @@ class Api::TextblocksController < ApplicationController
 
   private
   def textblock_params
-    params.require(:textblock).permit(:body, :title, :sentences)
+    params.require(:textblock).permit(:body, :title, :urls)
   end
 end
 
