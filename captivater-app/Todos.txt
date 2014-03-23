@@ -1,9 +1,13 @@
-TODO LIST
--create backbone show view, no router
--sanatize input: handle symbols, make everything lowercase
--add word attribute to url model. Will be helpful when reading
--prevent duplicate images
+REDUCE LAG TIME
 
+-only display one image per sentence
+
+
+
+
+TODO LIST
+-sanatize input: handle symbols, make everything lowercase
+-prevent duplicate images
 
 
 
@@ -23,13 +27,6 @@ ADDITIONAL FUNCTIONALITY
 -add omniauthable to users model
 -omniauth good for allowing users to sign in with facebook or twitter
 
-do we grab all the images at once?
-not rendering all the images at once. 
-use javascript to render an image
-
-
-get started by displaying the first sentence and the images for that first sentence
-
 ARCHITECTURE:
 
 textblock
@@ -40,3 +37,7 @@ body, references a textblock
 
 url 
 url, word references a sentence
+
+
+the show view for a textblock should have div tags for images and for sentences
+it listens for keypresses 

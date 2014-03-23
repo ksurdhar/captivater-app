@@ -1,0 +1,1 @@
+json.partial!("textblocks/textblock", :textblock => @textblock)

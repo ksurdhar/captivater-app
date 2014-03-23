@@ -1,7 +1,6 @@
 require 'url_getter.rb'
 
-
-class TextblocksController < ApplicationController
+class Api::TextblocksController < ApplicationController
 
   def new
     @textblock = Textblock.new
@@ -10,10 +9,10 @@ class TextblocksController < ApplicationController
   def create
     @textblock = Textblock.new(textblock_params)
     @textblock.user_id = current_user.id
+
     if @textblock.save
 
       sentences = @textblock.body.split(".")
-
       sentences.each do |sentence|
         @textblock.sentences.create({ body: sentence })
       end
@@ -23,7 +22,7 @@ class TextblocksController < ApplicationController
         UrlGetter.build_url(filtered_words, sentence)
       end
 
-      redirect_to textblock_url(@textblock)
+      render "textblocks/show"
     else
       flash.now[:errors] = @textblock.errors.full_messages
       render :new
@@ -32,6 +31,7 @@ class TextblocksController < ApplicationController
 
   def show
     @textblock = Textblock.find(params[:id])
+    render "textblocks/show"
   end
 
   private
@@ -40,4 +40,3 @@ class TextblocksController < ApplicationController
   end
 end
 
-#when we create a block, we create sentences from the body, for each sentence we create urls

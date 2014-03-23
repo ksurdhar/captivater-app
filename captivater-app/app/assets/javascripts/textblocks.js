@@ -1,5 +1,7 @@
 $(function(){
   $('.tlt').textillate({ in: { effect: "fadeIn" }});
+
+  //mess with keypresses, see where they work
 });
 
 

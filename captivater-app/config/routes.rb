@@ -1,8 +1,10 @@
 CaptivaterApp::Application.routes.draw do
-  root to: "textblocks#new"
+  root to: "site#root"
   devise_for :users
 
-  resources :users, only: [:show]
-  resources :textblocks, only: [:new, :create, :show]
+  namespace :api, :defaults => { :format => :json } do
+    resources :users, only: [:show]
+    resources :textblocks, only: [:new, :create, :show]
+  end
   
 end

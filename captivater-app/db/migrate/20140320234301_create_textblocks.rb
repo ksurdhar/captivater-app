@@ -2,7 +2,7 @@ class CreateTextblocks < ActiveRecord::Migration
   def change
     create_table :textblocks do |t|
       t.string :title
-      t.string :body
+      t.text :body
       t.references :user, index: true
 
       t.timestamps
