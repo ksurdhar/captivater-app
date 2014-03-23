@@ -13,13 +13,15 @@ class UrlGetter
         round save since than through to toward towards under underneath unlike until up upon
         versus via with within without the to then when a distrust and there was} 
 
-    filtered_words = string.split(" ").select { |word| exceptions.include?(word) == false }
+    filtered_words = string.downcase.split(" ").select { |word| exceptions.include?(word) == false }
 
   end
 
   def self.build_url(words, sentence)
 
     consumer = OAuth::Consumer.new(CONSUMER_KEY, CONSUMER_SECRET, :site => "http://thenounproject.com/")
+
+    urls_arr = []
 
     words.each do |word|
 
@@ -31,11 +33,10 @@ class UrlGetter
 
       response_hash = JSON.parse(response.body)
 
-      sentence.urls.create({url: response_hash["icon"]["preview_url"], word: word })
-
+      urls_arr.push({ url: response_hash["icon"]["preview_url"], word: word, sentence_id: sentence.id })
     end
 
-    
+    return urls_arr.uniq    
    
   end 
 

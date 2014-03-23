@@ -12,14 +12,25 @@ class Api::TextblocksController < ApplicationController
 
     if @textblock.save
 
-      sentences = @textblock.body.split(".")
-      sentences.each do |sentence|
-        @textblock.sentences.create({ body: sentence })
-      end
+      ActiveRecord::Base.transaction do
 
-      @textblock.sentences.each do |sentence|
-        filtered_words = UrlGetter.filter_words(sentence.body)
-        UrlGetter.build_url(filtered_words, sentence)
+        sentence_arr = []
+        
+        @textblock.body.split(".").each do |sentence|
+          sentence_arr.push({ body: sentence, textblock_id: @textblock.id })
+        end
+
+        Sentence.create_many(sentence_arr)
+
+        urls_arr = []
+
+        @textblock.sentences.each do |sentence|
+          filtered_words = UrlGetter.filter_words(sentence.body)
+          urls_arr += UrlGetter.build_url(filtered_words, sentence)
+        end
+
+        Url.create_many(urls_arr)
+        
       end
 
       render "textblocks/show"

@@ -7,7 +7,6 @@ window.CaptivaterApp.Views.SentenceShow = Backbone.View.extend({
   },
 
   render: function () {
-    debugger
     var renderedContent = this.template({ sentences: this.collection });
 
     this.$el.html(renderedContent);

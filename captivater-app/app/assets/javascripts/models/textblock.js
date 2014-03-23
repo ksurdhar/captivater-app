@@ -17,6 +17,24 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
     }
 
     return jsonResp;
+  },
+
+  currentSentence: function(){
+
+    if(!this._currentPos){
+      this._currentPos = 0;
+    }
+    var sentences = this.get("body").split(".");
+    return sentences[this._currentPos];
+  },
+
+  nextSentence: function(){
+    this._currentPos += 1
+  },
+
+  prevSentence: function(){
+    this._currentPos -= 1
   }
+
 
 });

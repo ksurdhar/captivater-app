@@ -1,7 +1,8 @@
-REDUCE LAG TIME
-
--only display one image per sentence
-
+THINGS TO DO
+- migrations => a textblock has many urls
+- rails views: less jbuilder
+- replace sentence views with url views
+- url building logic
 
 
 
