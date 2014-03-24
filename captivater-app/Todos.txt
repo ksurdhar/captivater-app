@@ -3,14 +3,20 @@ THINGS TO DO
 CURRENT GOAL: load sentence images
 
 
+I want to cycle through the words which have images related to them
+highlight them (by adding styles) and display the associated image.
+
 
 UPCOMING GOALS
--get images to display
+-Look pretty
+-load faster
 -determine css structure for images 
 -(how to loop cleanly? use a set timeout and animate.css)
 -get textillate working again
 
--sanatize input: handle all symbols
+SANATIZE INPUT
+-add a period if last sentence doesn't end with punctuation
+
 -get refresh page to not fail miserably
 -general site navigation // settings page
 

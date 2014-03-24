@@ -23,6 +23,7 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
     if(!this._currentPos){
       this._currentPos = 0;
     }
+    //needs to be split on ! and ?
     var sentences = this.get("body").split(".");
     return sentences[this._currentPos];
   },
@@ -40,14 +41,15 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
   },
 
   currentImgs: function(){
-    var current_urls = "";
+    var current_urls = {};
+
     var current_words = this.currentSentence().split(" "); 
 
     var potential_urls = this.urls();
     potential_urls.each( function(url){
   
       if( _.contains(current_words, url.get("word")) ){
-        current_urls = current_urls.concat("<img src=" + url.get("url") + ">");
+        current_urls[url.get("word")] = "<img src=" + url.get("url") + ">"
       }
 
     });
@@ -55,3 +57,25 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
   }
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

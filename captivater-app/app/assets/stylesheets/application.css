@@ -12,3 +12,31 @@
  *= require_tree .
  *= require animate.css
  */
+
+span {
+    color:red;
+}
+
+.current_imgs img{
+  width: 200px;
+  height: 200px;
+}
+
+/*.current_imgs{
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  float: left;
+}*/
+
+/*.current_imgs img {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    right:0; 
+    bottom:0; 
+    margin:auto; 
+    min-width:50%;
+    min-height:0%;
+    border: 2px solid red;
+}*/
