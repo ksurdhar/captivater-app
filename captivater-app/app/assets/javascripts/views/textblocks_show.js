@@ -14,10 +14,8 @@ window.CaptivaterApp.Views.textblocksShow = Backbone.View.extend({
     var renderedContent = this.template({ block: this.model });
 
     this.$el.html(renderedContent);
-    this.$el.find(".current_sentence").html(this.model.currentSentence())
-    // loop thru currentImgs, insert into current_imgs tag: "<img src=" + url + "></img>"
-    // probably want to give each img it's own id or class for controlling appearance
-    
+    this.$el.find(".current_sentence").html(this.model.currentSentence());
+    this.$el.find(".current_imgs").html(this.model.currentImgs());
     return this;
   },
 

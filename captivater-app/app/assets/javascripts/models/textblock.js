@@ -37,21 +37,21 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
     if(this._currentPos > 0){
       this._currentPos -= 1
     }
-  }
+  },
 
-  // currentImgs: function(){
-  //   //return an array of all the images
-  //   //call helper function inside of render method
-  //   var current_urls = [];
-  //   var current_words = this.currentSentence().split(" "); // all words in current sente
-  //   // call function which returns all images
-  //   var potential_urls = this.urls();
-  //   _.each(potential_urls, function(url){
-  //     if( _.contains(current_words, url.get("word") ){
-  //       current_urls.push(url);
-  //     }
-  //   });
-  //   return current_urls;
-  // }
+  currentImgs: function(){
+    var current_urls = "";
+    var current_words = this.currentSentence().split(" "); 
+
+    var potential_urls = this.urls();
+    potential_urls.each( function(url){
+  
+      if( _.contains(current_words, url.get("word")) ){
+        current_urls = current_urls.concat("<img src=" + url.get("url") + ">");
+      }
+
+    });
+    return current_urls;
+  }
 
 });
