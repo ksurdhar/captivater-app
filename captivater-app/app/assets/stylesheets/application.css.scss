@@ -10,16 +10,23 @@
  *
  *= require_self
  *= require_tree .
- *= require animate.css
+ *= require animate
  */
 
+@import "bootstrap";
+
 span {
-    color:red;
+    color:#0099FF;
 }
 
 .current_imgs img{
   width: 200px;
   height: 200px;
+}
+
+.center {
+  text-align: center;
+  height: 300px;
 }
 
 /*.current_imgs{

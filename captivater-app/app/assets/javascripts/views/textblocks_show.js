@@ -3,7 +3,7 @@ window.CaptivaterApp.Views.textblocksShow = Backbone.View.extend({
 
   initialize: function (options) {
     this.listenTo(this.model, "sync", this.render);
-    setInterval(this.highlight.bind(this), 2000);
+    setInterval(this.highlight.bind(this), 2500);
   },
 
   events: {

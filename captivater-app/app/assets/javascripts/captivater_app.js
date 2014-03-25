@@ -13,8 +13,4 @@ window.CaptivaterApp = {
 
 $(document).ready(function(){
   CaptivaterApp.initialize();
-
- 
-
-
 });

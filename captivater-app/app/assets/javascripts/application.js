@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery.serializeJSON
 //= require jquery_ujs
+//= require bootstrap
 //= require jquery.lettering.js
 //= require jquery.textillate.js
 //= require underscore

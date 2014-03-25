@@ -1,17 +1,14 @@
 THINGS TO DO
 
-CURRENT GOAL: load sentence images
-
-
-I want to cycle through the words which have images related to them
-highlight them (by adding styles) and display the associated image.
+CURRENT GOAL: add bootstrap structure + styling
+push to heroku
+figure out color scheme, centering
+what other pages could I have?
 
 
 UPCOMING GOALS
 -Look pretty
 -load faster
--determine css structure for images 
--(how to loop cleanly? use a set timeout and animate.css)
 -get textillate working again
 
 SANATIZE INPUT
@@ -20,13 +17,10 @@ SANATIZE INPUT
 -get refresh page to not fail miserably
 -general site navigation // settings page
 
--highlight words that have associated images 
--dynamic highlighting
 
 HOW TO SPEED LOADING TIME
 -only get the images for the first two sentences.
 -when the user hits next, make an ajax request to grab images for the next sentence.
-
 
 ADDITIONAL FUNCTIONALITY
 - different language conversion w/ Google translate API
