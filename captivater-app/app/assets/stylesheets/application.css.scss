@@ -18,14 +18,12 @@
 
 .row1 {
   height: 200px;
-  /*border: 2px solid red;*/
 }
 
 .row2 {
   margin-top: 30px;
   height: 200px;
   font-size: 200%;
-  /*border: 2px solid blue;*/
 }
 
 span {
@@ -41,22 +39,3 @@ span {
   top:50px;
   text-align: center;
 }
-
-/*.current_imgs{
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  float: left;
-}*/
-
-/*.current_imgs img {
-    position:absolute; 
-    top:0; 
-    left:0; 
-    right:0; 
-    bottom:0; 
-    margin:auto; 
-    min-width:50%;
-    min-height:0%;
-    border: 2px solid red;
-}*/

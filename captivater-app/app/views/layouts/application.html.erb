@@ -5,6 +5,9 @@
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application"%>
   <%= csrf_meta_tags %>
+
+  
+
 </head>
 <body>
 
@@ -23,23 +26,23 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      
         <% if current_user %>
-          <li class="active"><a href="#">Create Story</a></li>
-          <li><a href="#">Your Stories</a></li>
-          <li><a href="#">Your Account</a></li>
-          <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Create Story</a></li>
+            <li><a href="#/textblocks">Your Stories</a></li>
+            <li><a href="#">Your Account</a></li>
+            <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
+          </ul
         <% else %>
-          <li><%= link_to "Sign Up", new_user_registration_path %></li>
-          <li><%= link_to "Sign In", new_user_session_path %></li>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Sign Up", new_user_registration_path %></li>
+            <li><%= link_to "Sign In", new_user_session_path %></li>
+          </ul>
         <% end %>
-      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-
-
 
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>

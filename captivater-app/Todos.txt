@@ -1,67 +1,39 @@
 THINGS TO DO
 
-CURRENT GOAL: add bootstrap structure + styling
+CURRENT GOAL: create index view
 
-Google translate:
-translate everything to english to find image matches
-reverse translate matches to get foreign words
+index view will have a list of stories with an icon, id 
+
 
 
 UPCOMING GOALS
+-change routes so that blocks are user specific// prevent people from navigating to other people's blocks
+-possibly add tags to stories // grouping by tags
+-autoload next sentence when done.
+-change new story view to not repeat app title / purpose
+
+-load faster
+-add landing page
+-sanatize input
+-Look pretty
 -push to heroku
 
--figure out color scheme
--Look pretty
--load faster
-
-SANATIZE INPUT
--autoload next sentence when done.
-
--get refresh page to not fail miserably
--general site navigation // settings page
-
-
-HOW TO SPEED LOADING TIME
--only get the images for the first two sentences.
--when the user hits next, make an ajax request to grab images for the next sentence.
 
 ADDITIONAL FUNCTIONALITY
 - different language conversion w/ Google translate API
-- speed up url fetching with "chapter" or "sectioning" 
+
 - the ability to save and share stories with other users
 - display the whole paragraph on the side as a minimap
 - parent mode: creating a blacklist of naughty words
 
 
+GOOGLE TRANSLATE
+translate everything to english to find image matches
+reverse translate matches to get foreign words
+
+
 -add omniauthable to users model
--omniauth good for allowing users to sign in with facebook or twitter
-
-
-ARCHITECTURE:
-
-textblock
-title, body, references a user
-
-url 
-url, word, references a textblock
-
-
-TRANSLATE FLOW
-
-save body
-convert to english
-filter english body, find eligible words
-
-
-
-
-
-
-
-
-
-
-
+-omniauth for sign in w facebook or twitter
 
 
 

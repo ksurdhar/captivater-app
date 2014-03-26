@@ -6,7 +6,8 @@ window.CaptivaterApp.Routers.AppRouter = Backbone.Router.extend({
 
   routes: {
     "":"textblockNew",
-    "textblocks/:id":"textblockShow"
+    "textblocks/:id":"textblockShow",
+    "textblocks":"textblockIndex"
   },
 
   textblockNew: function(){
@@ -21,7 +22,15 @@ window.CaptivaterApp.Routers.AppRouter = Backbone.Router.extend({
     var view = new CaptivaterApp.Views.textblocksShow({
       model: block
     });
-    this._swapView(view)
+    this._swapView(view);
+  },
+
+  textblockIndex: function(){
+    CaptivaterApp.Collections.blocks.fetch();
+    var view = new CaptivaterApp.Views.textblocksIndex({
+      collection: CaptivaterApp.Collections.blocks
+    });
+    this._swapView(view);
   },
 
   _swapView: function (view) {

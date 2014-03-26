@@ -2,6 +2,11 @@ require 'url_getter.rb'
 
 class Api::TextblocksController < ApplicationController
 
+  def index
+    @textblocks = current_user.textblocks
+    render "textblocks/index"
+  end
+
   def new
     @textblock = Textblock.new
   end
