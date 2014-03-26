@@ -21,7 +21,6 @@ window.CaptivaterApp.Routers.AppRouter = Backbone.Router.extend({
     var view = new CaptivaterApp.Views.textblocksShow({
       model: block
     });
-    
     this._swapView(view)
   },
 

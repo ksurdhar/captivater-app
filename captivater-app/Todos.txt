@@ -2,16 +2,20 @@ THINGS TO DO
 
 CURRENT GOAL: add bootstrap structure + styling
 
+Google translate:
+translate everything to english to find image matches
+reverse translate matches to get foreign words
 
 
 UPCOMING GOALS
 -push to heroku
+
 -figure out color scheme
 -Look pretty
 -load faster
 
 SANATIZE INPUT
--add a period if last sentence doesn't end with punctuation
+-autoload next sentence when done.
 
 -get refresh page to not fail miserably
 -general site navigation // settings page
@@ -40,4 +44,26 @@ title, body, references a user
 
 url 
 url, word, references a textblock
+
+
+TRANSLATE FLOW
+
+save body
+convert to english
+filter english body, find eligible words
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

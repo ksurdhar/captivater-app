@@ -50,9 +50,10 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
     var current_urls = {};
 
     var current_words = this.currentSentence().split(" "); 
+    var all_urls = this.urls();
 
-    var potential_urls = this.urls();
-    potential_urls.each( function(url){
+
+    all_urls.each( function(url){
   
       if( _.contains(current_words, url.get("word")) ){
         current_urls[url.get("word")] = "<img class='animated fadeInDown' src=" + url.get("url") + ">"
