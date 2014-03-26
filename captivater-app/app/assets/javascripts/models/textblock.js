@@ -4,7 +4,7 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
   urls: function(){
     if(!this._urls){
       this._urls = new CaptivaterApp.Collections.Urls([], {
-        sentence: this
+        textblock: this
       });
     }
     return this._urls;
@@ -29,7 +29,13 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
   },
 
   nextSentence: function(){
-    if(this._currentPos < this.get("body").split(".").length -2){
+    if(this.get('body').slice(-1) === "."){
+      if(this._currentPos < this.get("body").split(".").length -2){
+        this._currentPos += 1
+      };
+      return
+    }
+    if(this._currentPos < this.get("body").split(".").length -1){
       this._currentPos += 1
     };
   },

@@ -8,7 +8,6 @@ class Api::TextblocksController < ApplicationController
 
   def create
     @textblock = Textblock.new(textblock_params)
-    # debugger
     @textblock.user_id = current_user.id
 
     if @textblock.save
@@ -21,7 +20,6 @@ class Api::TextblocksController < ApplicationController
 
         Url.create_many(urls_arr)
       end
-
       render "textblocks/show"
     else
       flash.now[:errors] = @textblock.errors.full_messages

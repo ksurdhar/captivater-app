@@ -16,6 +16,7 @@
 //= require bootstrap
 //= require jquery.lettering.js
 //= require jquery.textillate.js
+//= require pace/pace
 //= require underscore
 //= require backbone
 //= require captivater_app

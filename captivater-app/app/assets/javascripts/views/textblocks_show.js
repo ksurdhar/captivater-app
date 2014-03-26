@@ -15,7 +15,7 @@ window.CaptivaterApp.Views.textblocksShow = Backbone.View.extend({
     var renderedContent = this.template({ block: this.model });
 
     this.$el.html(renderedContent);
-    this.$el.find(".current_sentence").html(this.model.currentSentence());
+    this.$el.find(".current_sentence").html(this.model.currentSentence() +".");
 
     return this;
   },

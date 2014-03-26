@@ -12,6 +12,7 @@ window.CaptivaterApp.Routers.AppRouter = Backbone.Router.extend({
   textblockNew: function(){
     var view = new CaptivaterApp.Views.textblocksNew();
     this._swapView(view);
+    $(".form-control").focus();
   },
 
   textblockShow: function(id){

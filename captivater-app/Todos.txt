@@ -1,15 +1,14 @@
 THINGS TO DO
 
 CURRENT GOAL: add bootstrap structure + styling
-push to heroku
-figure out color scheme, centering
-what other pages could I have?
+
 
 
 UPCOMING GOALS
+-push to heroku
+-figure out color scheme
 -Look pretty
 -load faster
--get textillate working again
 
 SANATIZE INPUT
 -add a period if last sentence doesn't end with punctuation

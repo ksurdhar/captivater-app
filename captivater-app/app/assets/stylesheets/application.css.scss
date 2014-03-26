@@ -11,9 +11,22 @@
  *= require_self
  *= require_tree .
  *= require animate
+ *= require pace/pace-theme-bounce
  */
 
 @import "bootstrap";
+
+.row1 {
+  height: 200px;
+  /*border: 2px solid red;*/
+}
+
+.row2 {
+  margin-top: 30px;
+  height: 200px;
+  font-size: 200%;
+  /*border: 2px solid blue;*/
+}
 
 span {
     color:#0099FF;
@@ -25,8 +38,8 @@ span {
 }
 
 .center {
+  top:50px;
   text-align: center;
-  height: 300px;
 }
 
 /*.current_imgs{

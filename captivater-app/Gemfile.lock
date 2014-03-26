@@ -102,6 +102,8 @@ GEM
     multi_json (1.9.0)
     oauth (0.4.7)
     orm_adapter (0.5.0)
+    pace-rails (0.0.9)
+      jquery-rails
     pg (0.17.1)
     polyglot (0.3.4)
     rack (1.5.2)
@@ -175,6 +177,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   oauth
+  pace-rails
   pg
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
