@@ -6,7 +6,6 @@ window.CaptivaterApp.Views.textblocksIndex = Backbone.View.extend({
   },
 
   render: function(){
-    // var myBlocks = this.collection.where({user_id: CaptivaterApp.current_user_id })
     var renderedContent = this.template({ blocks: this.collection });
     this.$el.html(renderedContent);
     return this;

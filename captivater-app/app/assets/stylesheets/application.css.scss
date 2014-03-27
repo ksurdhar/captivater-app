@@ -26,8 +26,26 @@
   font-size: 200%;
 }
 
+.blocky{
+  padding: 20px;
+  height: 150px;
+  font-size: 175%;
+  background-color: #3498db;
+  color: white;
+  border: 4px solid white;
+  text-align: center;
+}
+
+/*.inner-blocky{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  margin: 10px 10px 10px 10px;
+  border: 4px solid white;
+}*/
+
 span {
-    color:#0099FF;
+  color: #3498db;
 }
 
 .current_imgs img{
@@ -35,7 +53,7 @@ span {
   height: 200px;
 }
 
-.center {
+.centery {
   top:50px;
   text-align: center;
 }

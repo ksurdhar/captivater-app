@@ -1,14 +1,14 @@
 THINGS TO DO
 
-CURRENT GOAL: create index view
-
-index view will have a list of stories with an icon, id 
+CURRENT GOAL: create settings view
 
 
 
 UPCOMING GOALS
 -change routes so that blocks are user specific// prevent people from navigating to other people's blocks
 -possibly add tags to stories // grouping by tags
+-add
+
 -autoload next sentence when done.
 -change new story view to not repeat app title / purpose
 
@@ -22,6 +22,7 @@ UPCOMING GOALS
 ADDITIONAL FUNCTIONALITY
 - different language conversion w/ Google translate API
 
+- ability to change setTimeout speed
 - the ability to save and share stories with other users
 - display the whole paragraph on the side as a minimap
 - parent mode: creating a blacklist of naughty words
