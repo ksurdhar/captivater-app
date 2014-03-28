@@ -15,6 +15,7 @@ gem 'bulk_data_methods'
 gem 'pace-rails'
 gem 'rails_12factor'
 gem 'thin'
+gem 'json'
 
 gem 'figaro'
 
