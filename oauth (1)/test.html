@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script src="sha1.js"></script>
+	<script src="oauth.js"></script>
+</head>
+<body>
+	<script>
+		var url = "http://api.thenounproject.com/icon/orange"
+		var accessor = {
+		  consumerKey : "5147553f000649a2b75f5c56b13402cb",
+		  consumerSecret: "d21df2dc6e9b43118f09968f7219372c",
+		};
+
+		console.log(accessor)
+		var message = {
+		  action: url,
+		  method: "GET",
+		  parameters: {}
+		};
+
+		OAuth.completeRequest(message, accessor);
+		url = url + '?' + OAuth.formEncode(message.parameters);
+		console.log(url)
+	</script>
+
+</body>
+</html>

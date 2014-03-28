@@ -1,22 +1,33 @@
 THINGS TO DO
 
-CURRENT GOAL: create settings view
+CURRENT GOAL: fetch with JS
+
+  download and include their oauth.js and sha1.js
 
 
+
+rails_twelvefactor production environment
+stack overflow why icons don't appear
+production.rb
+
+
+add activesupport:inflector
 
 UPCOMING GOALS
 -change routes so that blocks are user specific// prevent people from navigating to other people's blocks
 -possibly add tags to stories // grouping by tags
--add
 
--autoload next sentence when done.
+-append all the images at once and just change the hidden property of the images.
+-this requires changing the highlight function
+
+-remove successful sign in after view changes
+-create settings view
 -change new story view to not repeat app title / purpose
-
--load faster
 -add landing page
 -sanatize input
 -Look pretty
 -push to heroku
+-autoload next sentence when done.
 
 
 ADDITIONAL FUNCTIONALITY

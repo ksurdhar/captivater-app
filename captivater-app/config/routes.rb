@@ -5,6 +5,7 @@ CaptivaterApp::Application.routes.draw do
   namespace :api, :defaults => { :format => :json } do
     resources :users, only: [:show]
     resources :textblocks, only: [:new, :create, :show, :index]
+    resources :urls, only: [:create]
   end
   
 end

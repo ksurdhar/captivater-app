@@ -20,7 +20,7 @@ class Api::TextblocksController < ApplicationController
       ActiveRecord::Base.transaction do
         urls_arr = []
         
-        filtered_words = UrlGetter.filter_words(@textblock.body)
+        filtered_words = UrlGetter.filter_words(@textblock.body)  #.split(".")[0]
         urls_arr += UrlGetter.build_url(filtered_words, @textblock)
 
         Url.create_many(urls_arr)

@@ -16,6 +16,8 @@
 //= require bootstrap
 //= require jquery.lettering.js
 //= require jquery.textillate.js
+//= require sha1.js
+//= require oauth.js
 //= require pace/pace
 //= require underscore
 //= require backbone

@@ -4,6 +4,7 @@ window.CaptivaterApp.Views.textblocksShow = Backbone.View.extend({
   initialize: function (options) {
     this.listenTo(this.model, "sync", this.render);
     setInterval(this.highlight.bind(this), 2500);
+    // this.model.fetchMoreUrls();
   },
 
   events: {
@@ -66,4 +67,5 @@ window.CaptivaterApp.Views.textblocksShow = Backbone.View.extend({
     }
     return this._counterNum;
   }
+
 });

@@ -63,6 +63,79 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
     return current_urls;
   }
 
+  // fetchMoreUrls: function(){
+
+  //   var that = this;
+
+  //   var otherSentences = this.get("body").split(".").slice(1);
+  //   var all_words = otherSentences.join(" ").split(" ");
+
+
+  //   for(var i=0; i < all_words.length; i++) {
+  //     all_words[i] = all_words[i].replace(/\W+/, '');
+  //   }
+  //   var uniq_words = _.uniq(all_words);
+
+  //   var filter = "aboard about above across after against along amid among anti around as " +
+  //       "at before behind below beneath beside besides between beyond but by concerning " +
+  //       "considering despite down during except excepting excluding following for from in " +
+  //       "inside into like minus near of off on onto opposite outside over past per plus regarding " +
+  //       "round save since than through to toward towards under underneath unlike until up upon " +
+  //       "versus via with within without the to then when a distrust and there was" 
+  //   filter.split(" ");
+    
+  //   var url_words = [];
+  //   for(var i = 0, l = uniq_words.length; i < l; ++i){
+  //     if(filter.indexOf(uniq_words[i]) === -1){
+  //       url_words.push(uniq_words[i])
+  //     }
+  //   };
+
+  //   //start url building
+  //   _.each(url_words, function(url_word){
+
+  //     var url = "http://api.thenounproject.com/icon/" + url_word
+  //     var accessor = {
+  //       consumerKey : api_key,
+  //       consumerSecret: api_secret
+  //     };
+
+  //     var message = {
+  //       action: url,
+  //       method: "GET",
+  //       parameters: {}
+  //     };
+
+  //     OAuth.completeRequest(message, accessor);
+  //     url = url + '?' + OAuth.formEncode(message.parameters);
+
+  //     debugger
+
+  //     $.getJSON(url, function(e){
+  //       debugger
+  //     });
+  //     // $.ajax({
+  //     //   url: url,
+  //     //   success: function(response){
+  //     //     debugger
+  //     //   },
+  //     //   error: function(e){
+  //     //     debugger
+  //     //   }
+  //     // });
+
+  //     // debugger
+
+  //     var newUrl = new CaptivaterApp.Models.Url( {url: {url: url, word: url_word, textblock_id: that.get("id") }} );
+  //     newUrl.save({}, {
+  //       success: function () {
+  //         that.urls().add(newUrl);
+  //       }
+  //     });
+  //   });
+  //   //end urlbuilding
+  // }
+
 });
 
 
