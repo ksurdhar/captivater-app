@@ -43,5 +43,10 @@ window.CaptivaterApp.Routers.AppRouter = Backbone.Router.extend({
     this.currentView && this.currentView.remove();
     this.currentView = view;
     this.$rootEl.html(view.render().$el);
+    if(this._noticeSwitch){
+      $(".notice").empty();
+    } else {
+      this._noticeSwitch = 1
+    }
   }
 });
