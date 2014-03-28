@@ -29,7 +29,7 @@
       
         <% if current_user %>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Create Story</a></li>
+            <li class="active"><a href="#/textblocks/new">Create Story</a></li>
             <li><a href="#/textblocks">Your Stories</a></li>
             <li><a href="#">Your Account</a></li>
             <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>

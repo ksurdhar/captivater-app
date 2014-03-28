@@ -102,6 +102,7 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.9.0)
+    newrelic_rpm (3.7.3.204)
     oauth (0.4.7)
     orm_adapter (0.5.0)
     pace-rails (0.0.9)
@@ -188,6 +189,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   json
+  newrelic_rpm
   oauth
   pace-rails
   pg

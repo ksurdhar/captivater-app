@@ -5,9 +5,15 @@ window.CaptivaterApp.Routers.AppRouter = Backbone.Router.extend({
   },
 
   routes: {
-    "":"textblockNew",
+    "":"greetView",
+    "textblocks/new":"textblockNew",
     "textblocks/:id":"textblockShow",
     "textblocks":"textblockIndex"
+  },
+
+  greetView: function(){
+    var view = new CaptivaterApp.Views.greetView();
+    this._swapView(view);
   },
 
   textblockNew: function(){

@@ -16,6 +16,7 @@ gem 'pace-rails'
 gem 'rails_12factor'
 gem 'thin'
 gem 'json'
+gem 'newrelic_rpm'
 
 gem 'figaro'
 
