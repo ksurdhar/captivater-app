@@ -187,6 +187,7 @@ DEPENDENCIES
   figaro
   jbuilder (~> 1.2)
   jquery-rails
+  json
   oauth
   pace-rails
   pg
