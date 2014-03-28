@@ -1,4 +1,4 @@
-require 'JSON'
+require 'json'
 class UrlGetter 
 
   CONSUMER_KEY = ENV["NOUN_PROJ_KEY"]
