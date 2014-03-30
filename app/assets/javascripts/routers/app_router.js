@@ -8,7 +8,8 @@ window.CaptivaterApp.Routers.AppRouter = Backbone.Router.extend({
     "":"greetView",
     "textblocks/new":"textblockNew",
     "textblocks/:id":"textblockShow",
-    "textblocks":"textblockIndex"
+    "textblocks":"textblockIndex",
+    "users/:id":"userShow"
   },
 
   greetView: function(){
@@ -36,6 +37,11 @@ window.CaptivaterApp.Routers.AppRouter = Backbone.Router.extend({
     var view = new CaptivaterApp.Views.textblocksIndex({
       collection: CaptivaterApp.Collections.blocks
     });
+    this._swapView(view);
+  },
+
+  userShow: function(){
+    var view = new CaptivaterApp.Views.userView();
     this._swapView(view);
   },
 

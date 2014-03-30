@@ -5,6 +5,7 @@ CURRENT GOAL: fetch with JS
   download and include their oauth.js and sha1.js
 
 
+-allow parents to tag words they don't want to appear
 
 rails_twelvefactor production environment
 stack overflow why icons don't appear

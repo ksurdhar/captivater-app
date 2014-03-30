@@ -28,7 +28,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#/textblocks/new">Create Story</a></li>
             <li><a href="#/textblocks">Your Stories</a></li>
-            <li><a href="#">Your Account</a></li>
+            <li><a href="#/users/<%=current_user.id%>">Your Account</a></li>
             <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
           </ul
         <% else %>
@@ -52,7 +52,7 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-  <p class="notice text-primary"><%= notice %></p>
+  <p class="notice text-primary col-xs-offset-1"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
 <%= yield %>
