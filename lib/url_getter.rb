@@ -14,7 +14,7 @@ class UrlGetter
         versus via with within without the to then when a distrust and there was} 
 
     all_words = []
-    sentences_arr = string.downcase.split(".")
+    sentences_arr = string.downcase.split(/([.?!])/)
     sentences_arr.each { |sentence| all_words += sentence.split(" ") }
     all_words.map! { |word| word.gsub(/\W+/, '') }
     all_words.uniq.select { |word| exceptions.include?(word) == false }

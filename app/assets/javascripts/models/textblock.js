@@ -24,18 +24,18 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
       this._currentPos = 0;
     }
     //needs to be split on ! and ?
-    var sentences = this.get("body").split(".");
+    var sentences = this.get("body").split(/[.?!]/);
     return sentences[this._currentPos];
   },
 
   nextSentence: function(){
-    if(this.get('body').slice(-1) === "."){
-      if(this._currentPos < this.get("body").split(".").length -2){
+    if(this.get('body').slice(-1) === /[.?!]/){
+      if(this._currentPos < this.get("body").split(/[.?!]/).length -2){
         this._currentPos += 1
       };
       return
     }
-    if(this._currentPos < this.get("body").split(".").length -1){
+    if(this._currentPos < this.get("body").split(/[.?!]/).length -2){
       this._currentPos += 1
     };
   },

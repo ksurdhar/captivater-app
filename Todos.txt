@@ -27,7 +27,6 @@ UPCOMING GOALS
 -add landing page
 -sanatize input
 -Look pretty
--push to heroku
 -autoload next sentence when done.
 
 

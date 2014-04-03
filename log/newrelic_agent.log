@@ -33,3 +33,20 @@
 [03/29/14 22:55:56 -0700 Kirans-MacBook-Pro.local (14749)] INFO : Installing Rails4 Error instrumentation
 [03/29/14 22:55:56 -0700 Kirans-MacBook-Pro.local (14749)] INFO : Finished instrumentation
 [03/29/14 22:55:56 -0700 Kirans-MacBook-Pro.local (14749)] INFO : Doing deferred dependency-detection before Rack startup
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Starting the New Relic agent in "development" environment.
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Reading configuration from config/newrelic.yml
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : New Relic Agent Developer Mode enabled.
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Enabling the Request Sampler.
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Environment: development
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : No known dispatcher detected.
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Application: My Application
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] WARN : Agent configured not to send data in this environment.
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Installing ActiveRecord 4 instrumentation
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Installing Net instrumentation
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Installing deferred Rack instrumentation
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Installing Rails 4 Controller instrumentation
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Installing Rails 4 view instrumentation
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Installing Rails4 Error instrumentation
+[04/02/14 20:56:45 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Finished instrumentation
+[04/02/14 20:56:46 -0700 Kirans-MacBook-Pro.local (7740)] INFO : Doing deferred dependency-detection before Rack startup
