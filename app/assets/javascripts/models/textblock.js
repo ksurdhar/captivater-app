@@ -36,7 +36,7 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
     if(!this._currentPos){
       this._currentPos = 0;
     }
-    var sentences = this.get("body").split(/([.?!])/);
+    var sentences = this.get("body").split(/[.?!]/);
     return sentences[this._currentPos];
   },
 
