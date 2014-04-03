@@ -23,8 +23,20 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
     if(!this._currentPos){
       this._currentPos = 0;
     }
-    //needs to be split on ! and ?
     var sentences = this.get("body").split(/[.?!]/);
+    var currentSen = sentences[this._currentPos];
+    
+    var endingArr = this.get("body").split(currentSen);
+    var ending = endingArr[endingArr.length -1];
+    var punctuation = ending.split("")[0];
+    return currentSen + punctuation;
+  },
+
+  strippedCurrentSentence: function(){
+    if(!this._currentPos){
+      this._currentPos = 0;
+    }
+    var sentences = this.get("body").split(/([.?!])/);
     return sentences[this._currentPos];
   },
 
@@ -49,7 +61,7 @@ window.CaptivaterApp.Models.Textblock = Backbone.Model.extend({
   currentImgs: function(){
     var current_urls = {};
 
-    var current_words = this.currentSentence().split(" "); 
+    var current_words = this.strippedCurrentSentence().split(" "); 
     var all_urls = this.urls();
 
 
