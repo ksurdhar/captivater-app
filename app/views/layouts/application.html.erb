@@ -7,55 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">Captivater</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-        <% if current_user %>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#/textblocks/new">Create Story</a></li>
-            <li><a href="#/textblocks">Your Stories</a></li>
-            <li><a href="#/users/<%=current_user.id%>">Your Account</a></li>
-            <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
-          </ul
-        <% else %>
-          <ul class="nav navbar-nav navbar-right">
-
-            <li><%= link_to "Sign Up", new_user_registration_path %></li>
-            <li><%= link_to "Sign In", new_user_session_path %></li>
-            <li>
-              <form action="<%= user_session_path %>" method="post">
-                <%= auth_token %>
-                <input type="hidden" name="user[email]" value="guest@123.com">
-
-                <input type="hidden" name="user[password]" value="password">
-
-                <input class="btn btn-lg btn-warning" type="submit" value="Sign In As Guest">
-              </form>
-            </li>
-          </ul>
-        <% end %>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-  <p class="notice text-primary col-xs-offset-1"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-
-<%= yield %>
-
+  <%= yield %>
 </body>
 </html>

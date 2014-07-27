@@ -35,7 +35,6 @@ window.CaptivaterApp.Views.textblocksShow = Backbone.View.extend({
   },
 
   highlight: function() {
-
     var that = this;
     var word_hash = this.model.currentImgs();
     var words = [];
@@ -67,5 +66,4 @@ window.CaptivaterApp.Views.textblocksShow = Backbone.View.extend({
     }
     return this._counterNum;
   }
-
 });

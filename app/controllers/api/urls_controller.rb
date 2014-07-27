@@ -2,9 +2,7 @@ class Api::UrlsController < ApplicationController
 
   def create
     @url = Url.new(url_params)
-
     if @url.save
-    
       render json: @url
     else
       render json: @url.errors.full_messages, status: 402

@@ -1,11 +1,5 @@
 require 'url_getter.rb'
-
 class Api::TextblocksController < ApplicationController
-
-  def index
-    @textblocks = current_user.textblocks
-    render "textblocks/index"
-  end
 
   def new
     @textblock = Textblock.new
@@ -13,16 +7,12 @@ class Api::TextblocksController < ApplicationController
 
   def create
     @textblock = Textblock.new(textblock_params)
-    @textblock.user_id = current_user.id
 
     if @textblock.save
-
       ActiveRecord::Base.transaction do
         urls_arr = []
-        
-        filtered_words = UrlGetter.filter_words(@textblock.body)  #.split(".")[0]
+        filtered_words = UrlGetter.filter_words(@textblock.body)
         urls_arr += UrlGetter.build_url(filtered_words, @textblock)
-
         Url.create_many(urls_arr)
       end
       render "textblocks/show"
@@ -38,6 +28,7 @@ class Api::TextblocksController < ApplicationController
   end
 
   private
+
   def textblock_params
     params.require(:textblock).permit(:body, :title, :urls)
   end

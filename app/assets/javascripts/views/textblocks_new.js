@@ -5,7 +5,6 @@ window.CaptivaterApp.Views.textblocksNew = Backbone.View.extend({
   },
 
   render: function(){
-
     var renderedContent = this.template();
     this.$el.html(renderedContent);
 
