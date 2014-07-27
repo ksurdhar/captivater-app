@@ -217,3 +217,54 @@
 [07/27/14 12:29:27 -0600 Kirans-MacBook-Pro.local (8918)] INFO : Installing Rails4 Error instrumentation
 [07/27/14 12:29:27 -0600 Kirans-MacBook-Pro.local (8918)] INFO : Finished instrumentation
 [07/27/14 12:29:27 -0600 Kirans-MacBook-Pro.local (8918)] INFO : Doing deferred dependency-detection before Rack startup
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Starting the New Relic agent in "development" environment.
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Reading configuration from config/newrelic.yml
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : New Relic Agent Developer Mode enabled.
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Enabling the Request Sampler.
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Environment: development
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : No known dispatcher detected.
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Application: My Application
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] WARN : Agent configured not to send data in this environment.
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Installing ActiveRecord 4 instrumentation
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Installing Net instrumentation
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Installing deferred Rack instrumentation
+[07/27/14 17:18:29 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Installing Rails 4 Controller instrumentation
+[07/27/14 17:18:30 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Installing Rails 4 view instrumentation
+[07/27/14 17:18:30 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Installing Rails4 Error instrumentation
+[07/27/14 17:18:30 -0600 Kirans-MacBook-Pro.local (10334)] INFO : Finished instrumentation
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Starting the New Relic agent in "development" environment.
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Reading configuration from config/newrelic.yml
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : New Relic Agent Developer Mode enabled.
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Environment: development
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : No known dispatcher detected.
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Application: My Application
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] WARN : Agent configured not to send data in this environment.
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Installing ActiveRecord 4 instrumentation
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Installing Net instrumentation
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Installing deferred Rack instrumentation
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Installing Rack::Builder middleware instrumentation
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Installing Rails 3+ middleware instrumentation
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Installing Rails 4 Controller instrumentation
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Installing Rails 4 view instrumentation
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Installing Rails4 Error instrumentation
+[07/27/14 17:19:23 -0600 Kirans-MacBook-Pro.local (10576)] INFO : Finished instrumentation
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Starting the New Relic agent in "development" environment.
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Reading configuration from config/newrelic.yml
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : New Relic Agent Developer Mode enabled.
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Environment: development
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : No known dispatcher detected.
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Application: My Application
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] WARN : Agent configured not to send data in this environment.
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Installing ActiveRecord 4 instrumentation
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Installing Net instrumentation
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Installing deferred Rack instrumentation
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Installing Rack::Builder middleware instrumentation
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Installing Rails 3+ middleware instrumentation
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Installing Rails 4 Controller instrumentation
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Installing Rails 4 view instrumentation
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Installing Rails4 Error instrumentation
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Finished instrumentation
+[07/27/14 17:19:46 -0600 Kirans-MacBook-Pro.local (10603)] INFO : Doing deferred dependency-detection before Rack startup

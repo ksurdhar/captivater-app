@@ -39,7 +39,7 @@ window.CaptivaterApp.Views.textblocksShow = Backbone.View.extend({
     var word_hash = this.model.currentImgs();
     var words = [];
     for(var k in word_hash) words.push(k);
-    words.reverse();
+    // words.reverse();
 
     var match = words[that._counter()]
     that.$el.find(".current_imgs").html(word_hash[match]);

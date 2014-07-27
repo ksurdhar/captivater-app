@@ -16,9 +16,22 @@
 
 @import "bootstrap";
 
+h2{
+  font-size: 2.5vmax;
+}
+
+/*.back{
+  font-size: .8em;
+  margin-top: 30px;
+}*/
+
 .logo {
-  font-size: 800%;
+  font-size: 10vw;
   color: #3498db
+}
+
+.lrg{
+  height: 50px;
 }
 
 .row1 {
@@ -26,19 +39,9 @@
 }
 
 .row2 {
-  margin-top: 30px;
   height: 200px;
   font-size: 200%;
-}
-
-.blocky{
-  padding: 20px;
-  height: 150px;
-  font-size: 175%;
-  background-color: #3498db;
-  color: white;
-  border: 4px solid white;
-  text-align: center;
+  margin-top: 15vmin;
 }
 
 span {
@@ -51,6 +54,6 @@ span {
 }
 
 .centery {
-  top:50px;
+  margin-top: 10vh;
   text-align: center;
 }
