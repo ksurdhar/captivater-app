@@ -4,8 +4,8 @@ All you need to do is write one or more sentences before hitting submit, and the
 
 == About
 
-*Uses Rails, Backbone.js, CSS Bootstrap and The Noun Project's API to visualize words
-*Given the app's simplicity, I'll likely replace Rails with Sinatra
-*In the future I'd like to add different languages by integrating Google Translate
+* Uses Rails, Backbone.js, CSS Bootstrap and The Noun Project's API to visualize words
+* Given the app's simplicity, I'll likely replace Rails with Sinatra
+* In the future I'd like to add different languages by integrating Google Translate
 
 
