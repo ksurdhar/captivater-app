@@ -1,28 +1,11 @@
-== README
+== Usage
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+All you need to do is write one or more sentences before hitting submit, and the app will do the rest. It's actually that easy. Or even a few words if you're shy. Try submitting noun-heavy sentences such as <tt>the eye of the cat looked like a diamond!</tt>.
 
-Things you may want to cover:
+== About
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Uses Rails, Backbone.js, CSS Bootstrap and The Noun Project's API to visualize words
+*Given the app's simplicity, I'll likely replace Rails with Sinatra
+*In the future I'd like to add different languages by integrating Google Translate
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
